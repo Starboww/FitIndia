@@ -24,8 +24,12 @@ class loginPage : AppCompatActivity() {
         }
 
         buttonLoginfinal.setOnClickListener {
-          Toast.makeText(this,"ligin btn clicked",Toast.LENGTH_SHORT).show()
+       //   Toast.makeText(this,"login btn clicked",Toast.LENGTH_SHORT).show()
         doLogin()
+        }
+        signup_intent_go.setOnClickListener {
+            val intent = Intent(this,register_act::class.java)
+            startActivity(intent);
         }
 
     }

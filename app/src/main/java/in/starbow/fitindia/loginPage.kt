@@ -23,7 +23,6 @@ class loginPage : AppCompatActivity() {
         }
         auth = FirebaseAuth.getInstance()
         buttonLoginfinal.setOnClickListener {
-
         doLogin()
         }
 
@@ -63,7 +62,7 @@ class loginPage : AppCompatActivity() {
                 } else {
                     // If sign in fails, display a message to the user.
                     Log.w("TAG4", "signInWithEmail:failure", task.exception)
-                    Toast.makeText(baseContext, "Authentication failed.",
+                    Toast.makeText(baseContext, "Login failed.",
                         Toast.LENGTH_SHORT).show()
                     updateUI(null)
                     // ...
@@ -78,15 +77,15 @@ class loginPage : AppCompatActivity() {
         val currentUser: FirebaseUser?= auth.currentUser
         updateUI(currentUser)
     }
-    fun updateUI(currentUser:FirebaseUser?)
+   private fun updateUI(currentUser:FirebaseUser?)
     {
         if(currentUser!=null)
         {
-            startActivity(Intent(this,dashboard::class.java))
+           //startActivity(Intent(this,dashboard::class.java))
         }
         else
         {
-            Toast.makeText(baseContext,"Login Failed",Toast.LENGTH_SHORT)
+            Toast.makeText(baseContext,"Login Failed",Toast.LENGTH_SHORT).show()
         }
     }
 

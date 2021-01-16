@@ -10,37 +10,36 @@
         android:id="@+id/login_email"
         android:layout_width="250dp"
         android:layout_height="37dp"
-        android:layout_marginTop="240dp"
+
         android:background="@drawable/input_login"
         android:hint="Email Address"
         android:inputType="textEmailAddress"
-
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.385"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.904" />
+        app:layout_constraintVertical_bias="0.344" />
 
     <EditText
         android:id="@+id/login_passw"
         android:layout_width="250dp"
         android:layout_height="37dp"
-        android:layout_marginBottom="404dp"
         android:background="@drawable/input_login"
         android:hint="Password"
         android:inputType="textPassword"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.386"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.385"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.449" />
 
     <Button
         android:id="@+id/buttonLoginfinal"
         android:layout_width="103dp"
         android:layout_height="37dp"
-        android:layout_marginTop="43dp"
         android:layout_marginEnd="56dp"
-        android:layout_marginBottom="324dp"
         android:alpha="0.9"
         android:background="@drawable/loginbutton"
         android:fontFamily="@font/regular"
@@ -52,7 +51,8 @@
         app:layout_constraintEnd_toStartOf="@+id/textView6"
         app:layout_constraintHorizontal_bias="0.968"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login_passw" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.548" />
 
     <TextView
         android:id="@+id/textView6"
@@ -101,7 +101,7 @@
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="156dp"
+        android:layout_marginTop="152dp"
         android:fontFamily="@font/bold"
         android:text="Hello there!"
         android:textColor="@color/mybluetext"
@@ -110,8 +110,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.306"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.727" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/login_back_btn"

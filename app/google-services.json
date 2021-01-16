@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "783516810867",
+    "project_id": "fitindia-7dd51",
+    "storage_bucket": "fitindia-7dd51.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:783516810867:android:85af6594cd6cafb5b77406",
+        "android_client_info": {
+          "package_name": "in.starbow.fitindia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "783516810867-esrfpbcs8deqvcs3f0tcmjh5spr1d9sa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKOQkgOQp-hoNBI1hLiXi8jZrGqLnz9Yw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "783516810867-esrfpbcs8deqvcs3f0tcmjh5spr1d9sa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

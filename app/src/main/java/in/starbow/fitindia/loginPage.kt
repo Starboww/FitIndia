@@ -17,12 +17,14 @@ class loginPage : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login_page)
+        auth = FirebaseAuth.getInstance()
         login_back_btn.setOnClickListener {
             val intent = Intent(this,MainActivity::class.java) ;
             startActivity(intent);
         }
-        auth = FirebaseAuth.getInstance()
+
         buttonLoginfinal.setOnClickListener {
+          Toast.makeText(this,"ligin btn clicked",Toast.LENGTH_SHORT).show()
         doLogin()
         }
 
@@ -36,14 +38,14 @@ class loginPage : AppCompatActivity() {
             return
 
         }
-        if(!Patterns.EMAIL_ADDRESS.matcher(registerEmail.text.toString()).matches())
+        if(!Patterns.EMAIL_ADDRESS.matcher(login_email.text.toString()).matches())
         {
             login_email.error="Please Enter Valid Email"
             login_email.requestFocus()
             return
 
         }
-        if(register_passw.text.toString().isEmpty())
+        if(login_passw.text.toString().isEmpty())
         {
             login_passw.error="Please Enter Password"
             login_passw.requestFocus()
@@ -80,8 +82,14 @@ class loginPage : AppCompatActivity() {
    private fun updateUI(currentUser:FirebaseUser?)
     {
         if(currentUser!=null)
+        {  if(currentUser.isEmailVerified) {
+            startActivity(Intent(this, dashboard::class.java))
+            finish()
+        }
+            else
         {
-           //startActivity(Intent(this,dashboard::class.java))
+            Toast.makeText(this,"Varify Your Email",Toast.LENGTH_LONG).show();
+        }
         }
         else
         {

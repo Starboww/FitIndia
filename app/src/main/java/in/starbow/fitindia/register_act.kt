@@ -35,10 +35,7 @@ class register_act : AppCompatActivity() {
         val currentUser = auth.currentUser
         updateUI(currentUser)
     }
-    fun updateUI(currentUser: FirebaseUser?)
-    {
 
-    }
     private fun signupUser()
     {
 
@@ -70,8 +67,16 @@ class register_act : AppCompatActivity() {
                     Log.d("Tag1", "createUserWithEmail:success")
                     Toast.makeText(this, "Authentication Done.",
                         Toast.LENGTH_SHORT).show()
-                  startActivity(Intent(this,loginPage::class.java))
-                    finish()
+
+                    val user : FirebaseUser? = auth.currentUser
+                    user!!.sendEmailVerification()
+                        .addOnCompleteListener { task ->
+                            if (task.isSuccessful) {
+                                Log.d("Email Tag", "Email sent.")
+                                startActivity(Intent(this,loginPage::class.java))
+                                finish()
+                            }
+                        }
                 } else {
                     // If sign in fails, display a message to the user.
                     Log.w("Tag2", "createUserWithEmail:failure", task.exception)
@@ -83,7 +88,10 @@ class register_act : AppCompatActivity() {
                 // ...
             }
     }
+    fun updateUI(currentUser: FirebaseUser?)
+    {
 
+    }
 
     }
 

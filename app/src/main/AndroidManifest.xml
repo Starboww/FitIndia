@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="in.starbow.fitindia">
 
-    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
 
     <application
         android:allowBackup="true"
@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FitIndia">
-        <activity android:name=".dashboard"></activity>
+        <activity android:name=".bmi" />
+        <activity android:name=".dashboard" />
         <activity android:name=".register_act" />
         <activity android:name=".loginPage" />
         <activity android:name=".peodmeter" />
@@ -23,9 +24,9 @@
             </intent-filter>
         </activity>
 
-        <service android:name="in.starbow.fitindia.service.StepDetectorService"
-            android:label="@string/app_name"/>
-
+        <service
+            android:name=".service.StepDetectorService"
+            android:label="@string/app_name" />
     </application>
 
 </manifest>

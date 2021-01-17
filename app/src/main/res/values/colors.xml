@@ -11,4 +11,5 @@
     <color name="mybluetext">#0B2450</color>
     <color name="mypinktext">#E83A59</color>
     <color name="mygray">#758283</color>
+    <color name="inactive">#FEA595</color>
 </resources>

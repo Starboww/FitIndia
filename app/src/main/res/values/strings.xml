@@ -9,4 +9,18 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="height">Height (in CMs)</string>
+    <string name="height_slider">Height Slider</string>
+    <string name="weight_in_kgs">Weight (in KGs)</string>
+    <string name="body_mass_index_or_bmi_helps_you_to_determine_whether_you_are_in_a_healthy_weight_range_for_your_height">Body Mass Index or BMI helps you to determine whether you are in a healthy weight range for your height.</string>
+    <string name="this_calculator_should_not_be_used_for_pregnant_women_or_children">* This calculator should not be used for pregnant women or children.</string>
+    <string name="your_bmi">YOUR BMI</string>
+    <string name="_21_5">21.5</string>
+    <string name="you_have_a_normal_body_weight_enjoy">You have a normal Body Weight. Enjoy !</string>
+    <string name="under">You are Underweight. Try Bulking up.</string>
+    <string name="over">You are Overweight. Try to lose some weight.</string>
+    <string name="_60">60</string>
 </resources>

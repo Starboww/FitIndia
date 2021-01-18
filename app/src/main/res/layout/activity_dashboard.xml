@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:scrollbars="none"
-    android:background="#EF3B36"
+    android:background="#03203C"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -22,9 +22,11 @@
             android:layout_marginStart="10dp"
             android:layout_marginBottom="10dp"
             android:fontFamily="@font/bold"
+            android:textAlignment="center"
             android:text="My Dashboard"
+            android:textColor="#EDC126"
             android:textSize="25sp"
-            android:textStyle="bold"/>
+            />
 
 
         <LinearLayout
@@ -108,10 +110,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="80sp"
-            android:fontFamily="@font/regular"
-            android:text="Select what you ate today!"
-            android:textColor="@color/mybluetext"
+            android:layout_marginBottom="10sp"
             android:layout_marginRight="20sp"
+            android:fontFamily="@font/thin"
+            android:layout_marginLeft="40sp"
+            android:text="Select what you ate today ?"
+            android:textAlignment="center"
+            android:textColor="#EDC126"
             android:textSize="22sp" />
 
         <LinearLayout
@@ -120,12 +125,13 @@
             android:layout_marginTop="10sp"
             android:orientation="horizontal">
 
-         <ImageView
-             android:id="@+id/image_selector"
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:src="@drawable/image_select"
-             android:adjustViewBounds="true"/>
+            <ImageView
+                android:id="@+id/image_selector"
+                android:layout_width="261dp"
+                android:layout_height="215dp"
+                android:layout_marginLeft="20sp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/image_select" />
 
         </LinearLayout>
     </LinearLayout>

@@ -27,7 +27,6 @@ class FoodSelectActivity : AppCompatActivity() {
         list.add(model("Burger", "Burger: 200 cal", R.drawable.hamburger))
         list.add(model("Pizza", " Pizza : 250 cal", R.drawable.pizza))
         list.add(model("cold drink", "Carbonated cold drink :140 cal", R.drawable.soft_drink))
-
         list.add(model("Apple", "Apple : 114 cal", R.drawable.apple))
         list.add(model("Bread", "4-bread Slice :65 cal", R.drawable.baguette))
         list.add(model("Cake", "1- Cake Slice : 132 cal", R.drawable.cake))
@@ -139,9 +138,6 @@ class FoodSelectActivity : AppCompatActivity() {
             if (position == 28) {
                 value.setText((value.text.toString().toInt() + 70).toString())
             }
-
-
-
         }
         reset.setOnClickListener {
             value.setText("0")

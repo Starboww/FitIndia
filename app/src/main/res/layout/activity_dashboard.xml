@@ -9,10 +9,6 @@
     android:background="#808080"
     tools:context=".MainActivity">
 
-
-
-
-
     <LinearLayout
         android:layout_width="300dp"
         android:layout_gravity="center_horizontal"
@@ -25,6 +21,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginStart="10dp"
             android:layout_marginBottom="10dp"
+            android:fontFamily="@font/bold"
             android:text="My Dashboard"
             android:textSize="25sp"
             android:textStyle="bold"/>
@@ -107,12 +104,28 @@
 
         </LinearLayout>
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80sp"
+            android:fontFamily="@font/regular"
+            android:text="Select what you ate today!"
+            android:textColor="@color/mybluetext"
+            android:layout_marginRight="20sp"
+            android:textSize="22sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="358dp"
+            android:layout_marginTop="10sp"
             android:orientation="horizontal">
 
+         <ImageView
+             android:id="@+id/image_selector"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:src="@drawable/image_select"
+             android:adjustViewBounds="true"/>
 
         </LinearLayout>
     </LinearLayout>

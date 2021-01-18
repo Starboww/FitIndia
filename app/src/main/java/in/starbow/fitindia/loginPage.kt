@@ -71,10 +71,10 @@ class loginPage : AppCompatActivity() {
                     Toast.makeText(baseContext, "Login failed.",
                         Toast.LENGTH_SHORT).show()
                     updateUI(null)
-                    // ...
+
                 }
 
-                // ...
+
             }
     }
 
@@ -92,7 +92,7 @@ class loginPage : AppCompatActivity() {
         }
             else
         {
-            Toast.makeText(this,"Varify Your Email",Toast.LENGTH_LONG).show();
+            Toast.makeText(this,"Verify Your Email",Toast.LENGTH_LONG).show();
         }
         }
         else

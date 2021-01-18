@@ -27,7 +27,10 @@ class dashboard : AppCompatActivity() {
             val intent = Intent(this, peodmeter::class.java)
             startActivity(intent);
         }
-
+      image_selector.setOnClickListener{
+          val intent = Intent(this,FoodSelectActivity::class.java)
+          startActivity(intent)
+      }
 
     }
 }

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".peodmeter"
-    android:background="#D4E4F8">
+    android:background="#EF3B36">
 
 
     <LinearLayout

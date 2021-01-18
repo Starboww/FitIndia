@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
+    android:background="#EF3B36"
     tools:context=".FoodSelectActivity">
 <ListView
     android:layout_width="match_parent"

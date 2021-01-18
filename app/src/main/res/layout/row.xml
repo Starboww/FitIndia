@@ -25,11 +25,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/bold"
+
                 android:text="Main text"
 
                 android:layout_marginHorizontal="20sp"
-                android:textColor="@color/mybluetext"
-                android:textSize="10dp" />
+                android:textColor="#F4BE2C"
+                android:textSize="17dp" />
 
             <TextView
                 android:id="@+id/foodDescription"
@@ -37,10 +38,10 @@
                 android:layout_marginHorizontal="20sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/bold"
+                android:fontFamily="@font/regular"
                 android:text="desc text"
-                android:textColor="@color/mybluetext"
-                android:textSize="10dp" />
+                android:textColor="#CAD5E2"
+                android:textSize="13dp" />
 
 
         </LinearLayout>

@@ -5,7 +5,7 @@
     android:id="@+id/linearLayoutCompat"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#EF3B36"
+    android:background="#03203C"
     tools:context=".FoodSelectActivity">
 
     <ListView
@@ -19,7 +19,7 @@
         app:layout_constraintBottom_toTopOf="@id/layout"
         />
     <LinearLayout
-        android:background="@color/white"
+        android:background="#F4BE2C"
         android:id="@+id/layout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -34,7 +34,8 @@
             android:layout_width="0dp"
             android:textColor="@color/black"
             android:textSize="24sp"
-            android:textStyle="bold"
+            android:fontFamily="@font/thin"
+            android:padding="6dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/calories" />
@@ -43,7 +44,7 @@
             android:layout_width="0dp"
             android:textColor="@color/black"
             android:textSize="24sp"
-            android:textStyle="bold"
+            android:fontFamily="@font/regular"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="0" />
@@ -52,7 +53,7 @@
             android:layout_width="0dp"
             android:textColor="@color/black"
             android:textSize="24sp"
-            android:textStyle="bold"
+           android:fontFamily="@font/thin"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/kcal" />
@@ -61,10 +62,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/reset"
-            android:background="@color/black"
+            android:background="#B4161B"
             android:textColor="@color/white"
+
             android:textSize="24sp"
-            android:textStyle="bold"
+            android:fontFamily="@font/regular"
             />
 
     </LinearLayout>

@@ -23,4 +23,8 @@
     <string name="under">You are Underweight. Try Bulking up.</string>
     <string name="over">You are Overweight. Try to lose some weight.</string>
     <string name="_60">60</string>
+    <string name="calories_taken">Calories Taken = 0 KCAL</string>
+    <string name="calories">Calories :</string>
+    <string name="kcal">KCAL</string>
+    <string name="reset">RESET</string>
 </resources>

@@ -22,7 +22,7 @@ class dashboard : AppCompatActivity() {
             startActivity(intent);
         }
 
-        pedometer.setOnClickListener {
+        activity_dietician.setOnClickListener {
             Toast.makeText(applicationContext, "Pedometer", Toast.LENGTH_SHORT).show()
             val intent = Intent(this, peodmeter::class.java)
             startActivity(intent);

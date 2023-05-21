@@ -65,10 +65,16 @@ class bmi : AppCompatActivity() {
         if (BMI < 18.5) {
             feedback.text = getString(R.string.under)
             feedback.setTextColor(Color.RED)
-        } else if (BMI >= 25) {
+        } else if (BMI >= 25&&BMI<35) {
             feedback.text = getString(R.string.over)
             feedback.setTextColor(Color.RED)
-        } else {
+        } 
+        else if(BMI>=35)
+        {
+           feedback.text = getString(R.string.obese)
+            feedback.setTextColor(Color.RED) 
+        } 
+        else {
             feedback.text = getString(R.string.you_have_a_normal_body_weight_enjoy)
             feedback.setTextColor(Color.GREEN)
         }

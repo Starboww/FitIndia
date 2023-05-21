@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="in.starbow.fitindia">
-
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-
     <application
-        android:name=".service.App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FitIndia">
-        <activity android:name=".FoodSelectActivity"></activity>
-        <activity android:name=".service.MainActivity" />
+        android:theme="@style/Theme.FitIndia"
+        android:name = "in.starbow.fitindia.service.App">
         <activity android:name=".bmi" />
         <activity android:name=".dashboard" />
         <activity android:name=".register_act" />
@@ -22,14 +19,11 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <service
             android:name=".service.StepDetectorService"
             android:label="@string/app_name" />
     </application>
-
 </manifest>

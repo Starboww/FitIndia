@@ -15,7 +15,7 @@
         <activity android:name=".dashboard" />
         <activity android:name=".register_act" />
         <activity android:name=".loginPage" />
-        <activity android:name=".peodmeter" />
+        <activity android:name=".DieticianActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

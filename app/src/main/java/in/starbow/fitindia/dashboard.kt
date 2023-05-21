@@ -23,8 +23,8 @@ class dashboard : AppCompatActivity() {
         }
 
         activity_dietician.setOnClickListener {
-            Toast.makeText(applicationContext, "Pedometer", Toast.LENGTH_SHORT).show()
-            val intent = Intent(this, peodmeter::class.java)
+            Toast.makeText(applicationContext, "Diet Suggestion", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, DieticianActivity::class.java)
             startActivity(intent);
         }
       image_selector.setOnClickListener{

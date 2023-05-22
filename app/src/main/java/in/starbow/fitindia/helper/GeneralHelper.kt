@@ -3,7 +3,7 @@ package `in`.starbow.fitindia.helper
 import `in`.starbow.fitindia.R
 import `in`.starbow.fitindia.dashboard
 
-import `in`.starbow.fitindia.peodmeter
+import `in`.starbow.fitindia.DieticianActivity
 
 import android.app.Notification
 import android.app.NotificationManager
@@ -28,7 +28,7 @@ class GeneralHelper {
             val NOTIFICATION_ID = 7837
             var notiBuilder: Notification.Builder = Notification.Builder(context)
             var notiManager: NotificationManager = context.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
-            val intent = Intent(context, peodmeter::class.java)
+            val intent = Intent(context, DieticianActivity::class.java)
             val pendingIntent = PendingIntent.getActivity(context, 0, intent, 0)
             var notification = NotificationCompat.Builder(context, "CHANNEL_ID")
                 .setContentTitle("Step Counter")

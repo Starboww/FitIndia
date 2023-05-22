@@ -1,12 +1,12 @@
-# FitIndia
+# BiteTracker
 Hackthon Project
 https://drive.google.com/file/d/1hW04EAhE-KX22kfOCHv4GKkwypN2evcR/view
 
 # Technology/language/tools Used 
- - firebase 
- - kotlin
- - java
- - android studio
+ - Firebase 
+ - Kotlin
+ - Java
+ - Android studio
 
 # Screenshots
 

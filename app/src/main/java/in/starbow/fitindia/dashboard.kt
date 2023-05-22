@@ -9,6 +9,7 @@ import kotlinx.android.synthetic.main.activity_dashboard.*
 
 
 import kotlinx.android.synthetic.main.activity_main.*
+import `in`.starbow.fitindia.DieticianActivity
 
 
 class dashboard : AppCompatActivity() {

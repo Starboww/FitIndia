@@ -73,7 +73,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:id="@+id/pedometer"
+                android:id="@+id/diet"
                 android:layout_weight="1"
                 app:cardCornerRadius="5dp"
                 app:cardElevation="5dp">
@@ -96,7 +96,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:padding="10dp"
-                        android:text="Pedometer"
+                        android:text="Diet Suggestion"
                         android:textAlignment="center" />
 
                 </LinearLayout>

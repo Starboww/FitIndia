@@ -89,7 +89,7 @@
                     <ImageView
                         android:layout_width="117dp"
                         android:layout_height="65dp"
-                        android:src="@drawable/peddometer" />
+                        android:src="@drawable/dietic"/>
 
                     <TextView
                         android:layout_width="match_parent"

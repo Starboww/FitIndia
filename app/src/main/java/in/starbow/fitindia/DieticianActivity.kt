@@ -95,17 +95,27 @@ class DieticianActivity : AppCompatActivity() {
     private fun calculateAndDisplayMealPlan() {
         val weight = weightEditText.text.toString().toFloat()
         val height = heightEditText.text.toString().toFloat()
-        val age = ageEditText.text.toString().toInt()
-        val gender = genderSpinner.selectedItem.toString()
-        val activityLevel = activitySpinner.selectedItem.toString()
+        val ageText = ageEditText.text.toString()
 
-        val basalMetabolicRate = calculateBMR(weight, height, age, gender)
-        val calorieIntake = calculateCalorieIntake(basalMetabolicRate, activityLevel)
+        if (ageText.isNotEmpty()) {
+            val age = ageText.toInt()
+            if (age >= 18) {
+                val gender = genderSpinner.selectedItem.toString()
+                val activityLevel = activitySpinner.selectedItem.toString()
 
-        val mealPlan = generateMealPlan()
+                val basalMetabolicRate = calculateBMR(weight, height, age, gender)
+                val calorieIntake = calculateCalorieIntake(basalMetabolicRate, activityLevel)
 
-        val result = "Calorie Intake: $calorieIntake\n\nMeal Plan:\n$mealPlan"
-        resultTextView.text = result
+                val mealPlan = generateMealPlan()
+
+                val result = "Calorie Intake: $calorieIntake\n\nMeal Plan:\n$mealPlan"
+                resultTextView.text = result
+            } else {
+                resultTextView.text = "Inappropriate age. Please enter age 18 or above."
+            }
+        } else {
+            resultTextView.text = "Please enter your age."
+        }
     }
 
     private fun calculateBMR(weight: Float, height: Float, age: Int, gender: String): Float {

@@ -22,7 +22,7 @@ class dashboard : AppCompatActivity() {
             startActivity(intent);
         }
 
-        activity_dietician.setOnClickListener {
+        DieticianActivity.setOnClickListener {
             Toast.makeText(applicationContext, "Diet Suggestion", Toast.LENGTH_SHORT).show()
             val intent = Intent(this, DieticianActivity::class.java)
             startActivity(intent);

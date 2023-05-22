@@ -59,7 +59,6 @@
         android:alpha="0.5"
         android:fontFamily="@font/thin"
         android:text="Nice to see you again!"
-        android:textColor="-estimate your calorie intake"
         android:textColor="#cbf542"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"

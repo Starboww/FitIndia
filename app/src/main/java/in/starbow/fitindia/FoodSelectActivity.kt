@@ -46,8 +46,36 @@ class FoodSelectActivity : AppCompatActivity() {
         list.add(model("Strawberry", "Strawberry : 110 cal", R.drawable.strawberry))
         list.add(model("meat", "250 g red meat : 300 cal", R.drawable.meat))
         list.add(model("Khichidi", "Khichidi : 70 cal", R.drawable.vegan_food))
-
-
+        list.add(model("Tomato","Average sized Tomato : 22 cal",R.drawable.tomato))
+        list.add(model("Potato", "Medium sized Potato : 110 cal", R.drawable.potato))
+        list.add(model("Lady Finger or Okra", "100 g : 33 cal", R.drawable.ladyfinger))
+        list.add(model("Capsicum", "100 g : 40 cal", R.drawable.capsicum))
+        list.add(model("Eggs", "Small egg 48 g : 54 cal", R.drawable.eggs))
+        list.add(model("Grapes", "100 g : 67 cal", R.drawable.grapes))
+        list.add(model("Guava", "100 g : 68 cal", R.drawable.guava))
+        list.add(model("Green Leafy Vegetables", "100 g : 23", R.drawable.greenleafy))
+        list.add(model("Dosa", "Medium Dosa : 168 cal", R.drawable.dosa))
+        list.add(model("Idly", "1 idli : 58 cal", R.drawable.idly))
+        list.add(model("WaterMelon", "100 g : 30 cal", R.drawable.watermelon))
+        list.add(model("Vada", "1 medu vada : 73 cal", R.drawable.vada))
+        list.add(model("Chikoo", "100 g : 83 cal", R.drawable.sapota))
+        list.add(model("Poori", "1 poori : 141 cal", R.drawable.puri))
+        list.add(model("Pineapple", "100 g : 50 cal", R.drawable.pineapple))
+        list.add(model("Papaya", "100 g : 32 cal", R.drawable.papaya))
+        list.add(model("Muskmelon", "100 g : 34 cal", R.drawable.muskmelon))
+        list.add(model("Mango", "100 g : 60 cal", R.drawable.mango))
+        list.add(model("Lychee", "100 g : 66 cal", R.drawable.lychee))
+        list.add(model("Custard Apple", "100 g : 94 cal", R.drawable.custardapple))
+        list.add(model("Cucumber", "Medium sized cucumber : 30 cal", R.drawable.cucumber))
+        list.add(model("Cherries", "100 g : 50 cal", R.drawable.cherries))
+        list.add(model("Berries", "100 g : 57 cal", R.drawable.berries))
+        list.add(model("Banana", "100 g : 89 cal", R.drawable.banana))
+        list.add(model("Broccoli", "100 g : 34 cal", R.drawable.broccoli))
+        list.add(model("Cabbage", "100 g : 25 cal", R.drawable.cabbage))
+        list.add(model("Cauliflower", "100 g : 25 cal", R.drawable.cauliflower))
+        list.add(model("Beetroot", "50 g : 22 cal", R.drawable.beetroot))
+        list.add(model("Drumsticks or Moringa", "100g : 25 cal", R.drawable.drumstick))
+        
         listview.adapter = food_adapter(this, R.layout.row, list)
         listView.setOnItemClickListener { parent: AdapterView<*>, view: View, position: Int, id: Long ->
             if (position == 0) {
@@ -138,6 +166,95 @@ class FoodSelectActivity : AppCompatActivity() {
             if (position == 28) {
                 value.setText((value.text.toString().toInt() + 70).toString())
             }
+            if(position == 29)
+            {
+                value.setText((value.text.toString().toInt()+ 22).toString())
+            }
+            if (position == 30) {
+                value.setText((value.text.toString().toInt() + 110).toString())
+            }
+            if (position == 31) {
+                value.setText((value.text.toString().toInt() + 33).toString())
+            }
+            if (position == 32) {
+                value.setText((value.text.toString().toInt() + 40).toString())
+            }
+            if (position == 33) {
+                value.setText((value.text.toString().toInt() + 54).toString())
+            }
+            if (position == 34) {
+                value.setText((value.text.toString().toInt() + 67).toString())
+            }
+            if (position == 35) {
+                value.setText((value.text.toString().toInt() + 68).toString())
+            }
+            if (position == 36) {
+                value.setText((value.text.toString().toInt() + 23).toString())
+            }
+            if (position == 37) {
+                value.setText((value.text.toString().toInt() + 168).toString())
+            }
+            if (position == 38) {
+                value.setText((value.text.toString().toInt() + 58).toString())
+            }
+            if (position == 39) {
+                value.setText((value.text.toString().toInt() + 30).toString())
+            }
+            if (position == 40) {
+                value.setText((value.text.toString().toInt() + 73).toString())
+            }
+            if (position == 41) {
+                value.setText((value.text.toString().toInt() + 83).toString())
+            }
+            if (position == 42) {
+                value.setText((value.text.toString().toInt() + 141).toString())
+            }
+            if (position == 43) {
+                value.setText((value.text.toString().toInt() + 50).toString())
+            }
+            if (position == 44) {
+                value.setText((value.text.toString().toInt() + 32).toString())
+            }
+            if (position == 45) {
+                value.setText((value.text.toString().toInt() + 34).toString())
+            }
+            if (position == 46) {
+                value.setText((value.text.toString().toInt() + 60).toString())
+            }
+            if (position == 47) {
+                value.setText((value.text.toString().toInt() + 66).toString())
+            }
+            if (position == 48) {
+                value.setText((value.text.toString().toInt() + 94).toString())
+            }
+            if (position == 49) {
+                value.setText((value.text.toString().toInt() + 30).toString())
+            }
+            if (position == 50) {
+                value.setText((value.text.toString().toInt() + 50).toString())
+            }
+            if (position == 51) {
+                value.setText((value.text.toString().toInt() + 57).toString())
+            }
+            if (position == 52) {
+                value.setText((value.text.toString().toInt() + 89).toString())
+            }
+            if (position == 53) {
+                value.setText((value.text.toString().toInt() + 34).toString())
+            }
+            if (position == 54) {
+                value.setText((value.text.toString().toInt() + 25).toString())
+            }
+            if (position == 55) {
+                value.setText((value.text.toString().toInt() + 25).toString())
+            }
+            if (position == 56) {
+                value.setText((value.text.toString().toInt() + 22).toString())
+            }
+            if (position == 57) {
+                value.setText((value.text.toString().toInt() + 25).toString())
+            }
+            
         }
         reset.setOnClickListener {
             value.setText("0")

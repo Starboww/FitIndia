@@ -104,154 +104,148 @@ class FoodSelectActivity : AppCompatActivity() {
                 value.setText((value.text.toString().toInt() + 140).toString())
             }
             if (position == 8) {
-                value.setText((value.text.toString().toInt() + 110).toString())
-            }
-            if (position == 9) {
-                value.setText((value.text.toString().toInt() + 200).toString())
-            }
-            if (position == 10) {
                 value.setText((value.text.toString().toInt() + 114).toString())
             }
-            if (position == 11) {
+            if (position == 9) {
                 value.setText((value.text.toString().toInt() + 65).toString())
             }
-            if (position == 12) {
+            if (position == 10) {
                 value.setText((value.text.toString().toInt() + 132).toString())
             }
-            if (position == 13) {
+            if (position == 11) {
                 value.setText((value.text.toString().toInt() + 47).toString())
             }
-            if (position == 14) {
+            if (position == 12) {
                 value.setText((value.text.toString().toInt() + 30).toString())
             }
-            if (position == 15) {
+            if (position == 13) {
                 value.setText((value.text.toString().toInt() + 220).toString())
             }
-            if (position == 16) {
+            if (position == 14) {
                 value.setText((value.text.toString().toInt() + 200).toString())
+            }
+            if (position == 15) {
+                value.setText((value.text.toString().toInt() + 110).toString())
+            }
+            if (position == 16) {
+                value.setText((value.text.toString().toInt() + 170).toString())
             }
             if (position == 17) {
                 value.setText((value.text.toString().toInt() + 110).toString())
             }
             if (position == 18) {
-                value.setText((value.text.toString().toInt() + 170).toString())
-            }
-            if (position == 19) {
-                value.setText((value.text.toString().toInt() + 110).toString())
-            }
-            if (position == 20) {
                 value.setText((value.text.toString().toInt() + 52).toString())
             }
-            if (position == 21) {
+            if (position == 19) {
                 value.setText((value.text.toString().toInt() + 95).toString())
             }
-            if (position == 22) {
+            if (position == 20) {
                 value.setText((value.text.toString().toInt() + 68).toString())
             }
+            if (position == 21) {
+                value.setText((value.text.toString().toInt() + 155).toString())
+            }
+            if (position == 22) {
+                value.setText((value.text.toString().toInt() + 110).toString())
+            }
             if (position == 23) {
-            value.setText((value.text.toString().toInt() + 115).toString())
+            value.setText((value.text.toString().toInt() + 100).toString())
         }
             if (position == 24) {
                 value.setText((value.text.toString().toInt() + 110).toString())
             }
             if (position == 25) {
-                value.setText((value.text.toString().toInt() + 100).toString())
-            }
-            if (position == 26) {
-                value.setText((value.text.toString().toInt() + 110).toString())
-            }
-            if (position == 27) {
                 value.setText((value.text.toString().toInt() + 300).toString())
             }
-            if (position == 28) {
+            if (position == 26) {
                 value.setText((value.text.toString().toInt() + 70).toString())
+            }
+            if (position == 27) {
+                value.setText((value.text.toString().toInt() + 22).toString())
+            }
+            if (position == 28) {
+                value.setText((value.text.toString().toInt() + 110).toString())
             }
             if(position == 29)
             {
-                value.setText((value.text.toString().toInt()+ 22).toString())
+                value.setText((value.text.toString().toInt()+ 33).toString())
             }
             if (position == 30) {
-                value.setText((value.text.toString().toInt() + 110).toString())
-            }
-            if (position == 31) {
-                value.setText((value.text.toString().toInt() + 33).toString())
-            }
-            if (position == 32) {
                 value.setText((value.text.toString().toInt() + 40).toString())
             }
-            if (position == 33) {
-                value.setText((value.text.toString().toInt() + 54).toString())
+            if (position == 31) {
+                value.setText((value.text.toString().toInt() + 48).toString())
             }
-            if (position == 34) {
+            if (position == 32) {
                 value.setText((value.text.toString().toInt() + 67).toString())
             }
-            if (position == 35) {
+            if (position == 33) {
                 value.setText((value.text.toString().toInt() + 68).toString())
             }
-            if (position == 36) {
+            if (position == 34) {
                 value.setText((value.text.toString().toInt() + 23).toString())
             }
-            if (position == 37) {
+            if (position == 35) {
                 value.setText((value.text.toString().toInt() + 168).toString())
             }
-            if (position == 38) {
+            if (position == 36) {
                 value.setText((value.text.toString().toInt() + 58).toString())
             }
-            if (position == 39) {
+            if (position == 37) {
                 value.setText((value.text.toString().toInt() + 30).toString())
             }
-            if (position == 40) {
+            if (position == 38) {
                 value.setText((value.text.toString().toInt() + 73).toString())
             }
-            if (position == 41) {
+            if (position == 39) {
                 value.setText((value.text.toString().toInt() + 83).toString())
             }
-            if (position == 42) {
+            if (position == 40) {
                 value.setText((value.text.toString().toInt() + 141).toString())
             }
-            if (position == 43) {
+            if (position == 41) {
                 value.setText((value.text.toString().toInt() + 50).toString())
             }
-            if (position == 44) {
+            if (position == 42) {
                 value.setText((value.text.toString().toInt() + 32).toString())
             }
-            if (position == 45) {
+            if (position == 43) {
                 value.setText((value.text.toString().toInt() + 34).toString())
             }
-            if (position == 46) {
+            if (position == 44) {
                 value.setText((value.text.toString().toInt() + 60).toString())
             }
-            if (position == 47) {
+            if (position == 45) {
                 value.setText((value.text.toString().toInt() + 66).toString())
             }
-            if (position == 48) {
+            if (position == 46) {
                 value.setText((value.text.toString().toInt() + 94).toString())
             }
-            if (position == 49) {
+            if (position == 47) {
                 value.setText((value.text.toString().toInt() + 30).toString())
             }
-            if (position == 50) {
+            if (position == 48) {
                 value.setText((value.text.toString().toInt() + 50).toString())
             }
-            if (position == 51) {
+            if (position == 49) {
                 value.setText((value.text.toString().toInt() + 57).toString())
             }
-            if (position == 52) {
+            if (position == 50) {
                 value.setText((value.text.toString().toInt() + 89).toString())
             }
-            if (position == 53) {
+            if (position == 51) {
                 value.setText((value.text.toString().toInt() + 34).toString())
             }
+            if (position == 52) {
+                value.setText((value.text.toString().toInt() + 25).toString())
+            }
+            if (position == 53) {
+                value.setText((value.text.toString().toInt() + 25).toString())
+            }
             if (position == 54) {
-                value.setText((value.text.toString().toInt() + 25).toString())
-            }
-            if (position == 55) {
-                value.setText((value.text.toString().toInt() + 25).toString())
-            }
-            if (position == 56) {
                 value.setText((value.text.toString().toInt() + 22).toString())
             }
-            if (position == 57) {
+            if (position == 55) {
                 value.setText((value.text.toString().toInt() + 25).toString())
             }
             

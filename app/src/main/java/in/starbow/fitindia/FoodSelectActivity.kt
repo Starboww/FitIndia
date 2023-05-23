@@ -10,15 +10,25 @@ import food_adapter
 import kotlinx.android.synthetic.main.food_select.*
 
 class FoodSelectActivity : AppCompatActivity() {
+    private lateinit var listview: ListView
+    private lateinit var cartRecyclerView: RecyclerView
+    private lateinit var searchEditText: EditText
+    private lateinit var cartItems: MutableList<model>
+    private lateinit var cartAdapter: food_adapter
+
     @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.food_select)
-        var listview = findViewById<ListView>(R.id.listView)
-        var list = mutableListOf<model>()
-        var calorieText = findViewById<TextView>(R.id.calorieText)
-        val reset = findViewById<Button>(R.id.reset)
-        val value = findViewById<TextView>(R.id.valueCal)
+        listview = findViewById<ListView>(R.id.listView)
+        cartRecyclerView = findViewById<RecyclerView>(R.id.cartRecyclerView)
+        searchEditText = findViewById<EditText>(R.id.searchEditText)
+        
+        cartItems = mutableListOf<model>()
+        cartAdapter = food_adapter(this, R.layout.row, cartItems)
+        cartRecyclerView.adapter = cartAdapter
+        
+        val list = mutableListOf<model>()
         list.add(model("Rice", "Plain Rice : 200 cal", R.drawable.rice_bowl))
         list.add(model("Chapati", " 2 Plain chapati : 100 cal", R.drawable.roti_canai))
         list.add(model("Dal", "Plain dal : 50 cal", R.drawable.dal2))
@@ -82,6 +92,9 @@ class FoodSelectActivity : AppCompatActivity() {
         
         listview.adapter = food_adapter(this, R.layout.row, list)
         listView.setOnItemClickListener { parent: AdapterView<*>, view: View, position: Int, id: Long ->
+            val selectedItem = list[position]
+            cartItems.add(selectedItem)
+            cartAdapter.notifyDataSetChanged()
             if (position == 0) {
                 value.setText((value.text.toString().toInt() + 200).toString())
             }
@@ -266,7 +279,24 @@ class FoodSelectActivity : AppCompatActivity() {
             }
         }
         reset.setOnClickListener {
+            cartItems.clear()
+            cartAdapter.notifyDataSetChanged()
             value.setText("0")
         }
+        searchEditText.addTextChangedListener(object : TextWatcher {
+            override fun afterTextChanged(s: Editable?) {}
+
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
+
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+                // Filter the list based on the search query
+                val query = s.toString().toLowerCase()
+                val filteredList = list.filter { item ->
+                    item.name.toLowerCase().contains(query) || item.description.toLowerCase().contains(query)
+                }
+                listview.adapter = food_adapter(this@FoodSelectActivity, R.layout.row, filteredList.toMutableList())
+            }
+        }
+        
     }
 }

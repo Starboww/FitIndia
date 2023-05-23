@@ -296,7 +296,7 @@ class FoodSelectActivity : AppCompatActivity() {
                 }
                 listview.adapter = food_adapter(this@FoodSelectActivity, R.layout.row, filteredList.toMutableList())
             }
-        }
+        })
         
     }
 }

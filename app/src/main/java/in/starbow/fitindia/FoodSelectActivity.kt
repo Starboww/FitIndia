@@ -75,6 +75,7 @@ class FoodSelectActivity : AppCompatActivity() {
         list.add(model("Cauliflower", "100 g : 25 cal", R.drawable.cauliflower))
         list.add(model("Beetroot", "50 g : 22 cal", R.drawable.beetroot))
         list.add(model("Drumsticks or Moringa", "100g : 25 cal", R.drawable.drumstick))
+        list.add(model("Avocado", "100g : 160 cal", R.drawable.avacado))
         
         listview.adapter = food_adapter(this, R.layout.row, list)
         listView.setOnItemClickListener { parent: AdapterView<*>, view: View, position: Int, id: Long ->
@@ -248,7 +249,9 @@ class FoodSelectActivity : AppCompatActivity() {
             if (position == 55) {
                 value.setText((value.text.toString().toInt() + 25).toString())
             }
-            
+            if (position == 56) {
+                value.setText((value.text.toString().toInt() + 160).toString())
+            }
         }
         reset.setOnClickListener {
             value.setText("0")

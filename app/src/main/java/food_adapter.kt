@@ -21,7 +21,7 @@ class food_adapter(var mCtx:Context,var resources:Int,var items:List<model>):Arr
         imageView.setImageDrawable(mCtx.resources.getDrawable(mItem.img))
         titleTextView.text=mItem.title
         despTextView.text = mItem.description
-
+        //Added comment 
          return view
     }
 
